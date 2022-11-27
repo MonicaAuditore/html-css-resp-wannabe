@@ -140,12 +140,13 @@ img {
 
 @media only screen and (max-width: 480px) {
   .container {
-    width: 480px;
+    width: auto;
   }
 
   .row {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .lessons .col {
@@ -175,5 +176,19 @@ img {
 
   .steps {
     margin: 0;
+  }
+}
+
+/* BONUS */
+
+@media only screen and (min-width: 768px) and (max-width: 1160px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .container {
+    width: auto;
   }
 }
